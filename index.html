@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Linhas de Ônibus</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Linhas de Ônibus</h1>
+
+  <select id="linhaSelect">
+    <option value="linha001">Linha 001 - cd (interbairos manha coopagro)</option>
+    <option value="linha002">Linha 002 - cd (interbairos manha sao francisco)</option>
+    <option value="linha003">Linha 003 - cd (interbairos tarde coopagro)</option>
+    <option value="linha004">Linha 004 - cd (interbairos tarde sao francisco) </option>
+    <option value="linha006">Linha 006 - Novo Sarandi - V. Nova - Novo Sobradinho</option>
+    <option value="linha007">Linha 007 - Ouro Preto - Boa Vista</option>
+    <option value="linha008">Linha 008 - Grunplas</option>
+    <option value="linha010">Linha 010 - Bom Principio - Gramado - São Luiz</option>
+    <option value="linha011">Linha 011 - Dois Irmãos</option>
+    <option value="linha012">Linha 012 - Primato interbairros</option>
+    <option value="linha013">Linha 013 - Primato via Barão</option>
+    <option value="linha014">Linha 014 - Primato via Cirne Lima</option>
+    <option value="linha015">Linha 015 - Carlu via Barão</option>
+    <option value="linha016">Linha 016 - Carlu via Coopagro</option>
+    <option value="linha017">Linha 017 - Biopark Interbairros</option>
+    <option value="linha019">Linha 019 - Biopark via CD</option>
+    <option value="linha020">Linha 020 - Santa Clara IV</option>
+    <option value="linha021">Linha 021 - Santa Clara II</option>
+    <option value="linha022">Linha 022 - JD Concordia</option>
+    <option value="linha023">Linha 023 - Coopagro via Centro</option>
+    <option value="linha024">Linha 024 - São Francisco São João/ Parizzotto</option>
+    <option value="linha025">Linha 025 - São Francisco São João/Paulista</option>
+    <option value="linha024">Linha 024 - São Francisco São João / Parizzotto</option>
+    <option value="linha025">Linha 025 - São Francisco São João / Paulista</option>
+    <option value="linha026">Linha 026 - São Francisco Parizzotto / São João</option>
+    <option value="linha027">Linha 027 - São Francisco Parizzotto / Auto Panorama</option>
+    <option value="linha028">Linha 028 - São Francisco São João / São João</option>
+    <option value="linha029">Linha 029 - PUC</option>
+    <option value="linha030">Linha 030 - Operária via Piratini / Belo Horizonte</option>
+    <option value="linha031">Linha 031 - Operária via Parizzotto / Belo Horizonte</option>
+    <option value="linha032">Linha 032 - Operária via Piratini</option>
+    <option value="linha033">Linha 033 - Operária via Parizzotto</option>
+    <option value="linha034">Linha 034 - Jd. Porto Alegre</option>
+    <option value="linha035">Linha 035 - Vila Industrial</option>
+    <option value="linha036">Linha 036 - Coopagro via Parigot</option>
+    <option value="linha037">Linha 037 - Pioneira via São João</option>
+    <option value="linha038">Linha 038 - Pioneira via Piratini</option>
+    <option value="linha039">Linha 039 - Europa via Centro</option>
+    <option value="linha040">Linha 040 - Panorama II</option>
+    <option value="linha041">Linha 041 - Escola Agrícola via 1 de Maio</option>
+    <option value="linha042">Linha 042 - Chocolates Roma</option>
+    <option value="linha043">Linha 043 - Covatti/Ceebja</option>
+    <option value="linha044">Linha 044 - Loteamento Lorenzetti</option>
+    <option value="linha045">Linha 045 - Europa via Concórdia</option>
+    <option value="linha046">Linha 046 - Aterro Sanitário</option>
+    <option value="linha047">Linha 047 - Senai/Prati</option>
+    <option value="linha048">Linha 048 - Intebairros Noturno</option>
+    <option value="linha049">Linha 049 - Prati</option>
+    <option value="linha050">Linha 050 - Santa Clara II via Cepbio</option>
+
+  <!-- PARTE DO ANDREI -->
+
+    <option value="linha077">Linha 077 - Multinha BRF</option>
+    <option value="linha078">Linha 078 - BRF Interbairros Pioneira / Empanados</option>
+    <option value="linha079">Linha 079 - BRF Interbairros SF via Panorama</option>
+    <option value="linha080">Linha 080 - BRF Interbairros S.Francisco</option>
+    <option value="linha081">Linha 081 - Reforço Sta Clara IV</option>
+    <option value="linha082">Linha 082 - Dois Irmãos/Dez de Maio</option>
+    <option value="linha083">Linha 083 - Carlu via Coopagro/Prati</option>
+    <option value="linha084">Linha 084 - Biopark Interbairros 2</option>
+    <option value="linha085">Linha 085 - Europa via Centro Reforço</option>
+    <option value="linha086">Linha 086 - BRF Interbairros Industrial/Coopagro</option>
+    <option value="linha087">Linha 087 - BRF Interbairros Jd Mata/Europa</option>
+    <option value="linha088">Linha 088 - Coopagro via Centro Reforço</option>
+    <option value="linha089">Linha 089 - BRF Interbairros Europa</option>
+    <option value="linha091">Linha 091 - Prati Interbairros Pioneira/Europa</option>
+    <option value="linha092">Linha 092 - Prati Interbairros Pion/Europ/JP Alegre</option>
+    <option value="linha093">Linha 093 - BRF Interbairros Coopagro via São João</option>
+    <option value="linha094">Linha 094 - BRF Interbairros São Francisco</option>
+    <option value="linha095">Linha 095 - BRF Interbairros Pioneira/Europa Concord</option>
+    <option value="linha096">Linha 096 - BRF Interbairros Europa/Santa Clara IV</option>
+    <option value="linha097">Linha 097 - BRF Interbairros Europa/Pioneira</option>
+    <option value="linha098">Linha 098 - BRF Interbairros Europa/ST Clara IV</option>
+    <option value="linha099">Linha 099 - BRF Interbairros JD.MAta/Europa</option>
+    <option value="linha100">Linha 100 - BRF Interbairros Pioneira/Pinheirinho</option>
+
+  </select>
+
+
+  <!-- Linha 001 -->
+<article id="linha001" class="linhaOnibus">
+  <h2>cd (interbairos manha coopagro)</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Rua Carlos Barbosa</td><td>04:10</td></tr>
+      <tr><td>Rua Oreste</td><td>04:23</td></tr>
+      <tr><td>Rua Cristo Rei</td><td>04:36</td></tr>
+      <tr><td>Avenida Parigot de Souza</td><td>04:43</td></tr>
+      <tr><td>Avenida Nossa Senhora</td><td>04:50</td></tr>
+      <tr><td>Avenida dos Flamboyants</td><td>04:57</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/1.jpeg" alt="Linha 001 - cd (interbairos manha coopagro)">
+</article>
+
+<!-- Linha 002 -->
+<article id="linha002" class="linhaOnibus">
+  <h2>Linha 002 - cd (interbairos manha sao francisco)</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Rua Santos Dumont</td><td>04:10</td></tr>
+      <tr><td>Rua Caldas Júnior</td><td>04:15</td></tr>
+      <tr><td>Rua Capitão Leonidas das Marques</td><td>04:25</td></tr>
+      <tr><td>Rua Waldemar Turatti</td><td>04:35</td></tr>
+      <tr><td>Rua Arthur Mazzaferro</td><td>04:45</td></tr>
+      <tr><td>Avenida dos Flamboyants</td><td>04:55</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/2.jpeg" alt="Linha 002 - cd (interbairos manha sao francisco)">
+</article>
+
+<!-- Linha 003 -->
+<article id="linha003" class="linhaOnibus">
+  <h2>Linha 003 - São Francisco Parizzotto / São João</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:10</td></tr>
+      <tr><td>Rua Carlos Barbosa</td><td>06:20</td></tr>
+      <tr><td>Avenida Ministro Cirde Lima</td><td>06:30</td></tr>
+      <tr><td>Avenida Parigot de Souza</td><td>06:40</td></tr>
+      <tr><td>Rua Júlio Verne</td><td>06:50</td></tr>
+      <tr><td>Avenida Flamboyants</td><td>07:00</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/3.jpeg" alt="Linha 003 - São Francisco Parizzotto / São João">
+</article>
+
+<!-- Linha 004 -->
+<article id="linha004" class="linhaOnibus">
+  <h2>Linha 004 - São Francisco Parizzotto / Auto Panorama</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Avenida Atilho Fontana</td><td>06:15</td></tr>
+      <tr><td>Avenida Carlos Sbaraini</td><td>06:25</td></tr>
+      <tr><td>Rua Teraza Barbieri</td><td>06:35</td></tr>
+      <tr><td>Rua Primeiro de Maio</td><td>06:45</td></tr>
+      <tr><td>Avenida Maripá</td><td>06:55</td></tr>
+      <tr><td>Avenida dos Flamboyants</td><td>07:05</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/4.jpeg" alt="Linha 004 - São Francisco Parizzotto / Auto Panorama">
+</article>
+
+
+<!-- Linha 006 -->
+<article id="linha006" class="linhaOnibus">
+  <h2>Linha 006 - Novo Sarandi - V. Nova - Novo Sobradinho</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>05:00</td></tr>
+      <tr><td>Avenida Ministro Cirde Lima</td><td>05:10</td></tr>
+      <tr><td>Rua Conde Pacelli</td><td>05:59</td></tr>
+      <tr><td>Avenida Marechal Castelo Branco</td><td>06:30</td></tr>
+      <tr><td>Rua Fortaleza</td><td>06:40</td></tr>
+      <tr><td>Avenida Marechal Castelo Branco</td><td>06:46</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/6.jpeg" alt="Linha 006 - Novo Sarandi - V. Nova - Novo Sobradinho">
+</article>
+
+<!-- Linha 007 -->
+<article id="linha007" class="linhaOnibus">
+  <h2>Linha 007 - Ouro Preto - Boa Vista</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>05:45</td></tr>
+      <tr><td>Avenida Parigot de Souza</td><td>05:51</td></tr>
+      <tr><td>PR-182</td><td>05:55</td></tr>
+      <tr><td>Ouro Preto</td><td>06:30</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/7.jpeg" alt="Linha 007 - Ouro Preto - Boa Vista">
+</article>
+
+<!-- Linha 008 -->
+<article id="linha008" class="linhaOnibus">
+  <h2>Linha 008 - Grunplas</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>09:30</td></tr>
+      <tr><td>Rua Barão do Rio Branco</td><td>09:35</td></tr>
+      <tr><td>Rua Ângelo Cornelli</td><td>09:38</td></tr>
+      <tr><td>Rodovia Doutor Ernesto</td><td>10:00</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/8.jpeg" alt="Linha 008 - Grunplas">
+</article>
+
+
+
+<!-- Linha 010 -->
+<article id="linha010" class="linhaOnibus">
+  <h2>Linha 010 - Bom Principio - Gramado - São Luiz</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>05:35</td></tr>
+      <tr><td>Avenida Parigot de Souza</td><td>05:42</td></tr>
+      <tr><td>Estrada Bom Principio </td><td>06:22</td></tr>
+      <tr><td>Estrada linha Gramado </td><td>06:35</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/10.jpeg" alt="Linha 010 - Bom Principio - Gramado - São Luiz">
+</article>
+
+  <!-- Linha 011 -->
+  <article id="linha011" class="linhaOnibus">
+    <h2>Linha 011 - Dois Irmãos</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+
+        <tr><td>Terminal Central</td><td>05:55</td></tr>
+        <tr><td>Rua Guarani</td><td>06:02</td></tr>
+        <tr><td>Avenida do Comércio</td><td>06:32</td></tr>
+        <tr><td>Rua das Saudades</td><td>07:24</td></tr>
+        <tr><td>Rua Sete de Julho</td><td>07:40</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/11.jpeg" alt="Linha 011 - Dois Irmãos">
+  </article>
+
+  <!-- Linha 012 -->
+  <article id="linha012" class="linhaOnibus" style="display:none">
+    <h2>Linha 012 - Primato interbairros</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Rua Egydio Geroymo Muretto</td><td>04:10</td></tr>
+        <tr><td>Rua Borges Medeiros</td><td>04:40</td></tr>
+        <tr><td>Avenida Parigot de Souza</td><td>04:45</td></tr>
+        <tr><td>Avenida Ministro Cirde Lima</td><td>04:49</td></tr>
+        <tr><td>Marginal PR-163</td><td>05:34</td></tr>
+        
+      </tbody>
+    </table>
+    <img src="Pasta sem título/12.jpeg" alt="Linha 012 - Primato interbairros">
+  </article>
+
+  <!-- Linha 013 -->
+  <article id="linha013" class="linhaOnibus" style="display:none">
+    <h2>Linha 013 - Primato via Barão</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Central</td><td>13:00</td></tr>
+        <tr><td>Avenida Barão do Rio Branco</td><td>13:05</td></tr>
+        <tr><td>Rua Joaquim Piazza</td><td>13:15</td></tr>
+        <tr><td>Marginal PR-163</td><td>13:48</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/13.jpeg" alt="Linha 013 - Primato via Barão">
+  </article>
+
+  <!-- Linha 014 -->
+  <article id="linha014" class="linhaOnibus" style="display:none">
+    <h2>Linha 014 - Primato via Cirne Lima</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Marginal PR-163</td><td>21:55</td></tr>
+        <tr><td>Avenida Ministro Cirde Lima</td><td>22:12</td></tr>
+        <tr><td>Avenida Parigot de Souza</td><td>22:20</td></tr>
+        <tr><td>Terminal Central</td><td>22:30</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/14.jpeg" alt="Linha 014 - Primato via Cirne Lima">
+  </article>
+
+  <!-- Linha 015 -->
+  <article id="linha015" class="linhaOnibus" style="display:none">
+    <h2>Linha 015 - Carlu via Barão</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Central</td><td>06:50</td></tr>
+        <tr><td>Avenida Parigot de Souza</td><td>06:57</td></tr>
+        <tr><td>Rua Laurindo Moterle</td><td>07:00</td></tr>
+        <tr><td>Rua Orestes Fiorentin</td><td>07:07</td></tr>
+        <tr><td>Avenida Ministro Cirde Lima</td><td>07:12</td></tr>
+        <tr><td>Rodovia Doutor Ernesto</td><td>07:32</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/15.jpeg" alt="Linha 015 - Carlu via Barão">
+  </article>
+
+
+  <!-- Linha 017 -->
+  <article id="linha017" class="linhaOnibus" style="display:none">
+    <h2>Linha 017 - Biopark Interbairros</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Rua Dom Pedro II</td><td>06:05</td></tr>
+        <tr><td>Avenida Carlos Sbaraini</td><td>06:12</td></tr>
+        <tr><td>Rua Mario Fontana</td><td>06:18</td></tr>
+        <tr><td>Rua Primeiro de Maio</td><td>06:24</td></tr>
+        <tr><td>Avenida Maripá</td><td>06:36</td></tr>
+        <tr><td>PR-182</td><td>07:02</td></tr>
+        <tr><td>Avenida Max Planc</td><td>07:35</td></tr>
+
+      </tbody>
+    </table>
+    <img src="Pasta sem título/17.jpeg" alt="Linha 017 - Biopark Interbairros">
+  </article>
+
+
+  <!-- Linha 019 -->
+  <article id="linha019" class="linhaOnibus" style="display:none">
+    <h2>Linha 019 - Biopark via CD</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Avenida Max Planc</td><td>07:05</td></tr>
+        <tr><td>PR-182</td><td>07:48</td></tr>
+        <tr><td>Avenida Parigot de Souza</td><td>07:52</td></tr>
+        <tr><td>Terminal Central </td><td>08:07</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/19.jpeg" alt="Linha 019 - Biopark Interbairros">
+  </article>
+
+  <!-- Linha 020 -->
+  <article id="linha020" class="linhaOnibus" style="display:none">
+    <h2>Linha 020 - Santa Clara IV</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Covatti</td><td>06:00</td></tr>
+        <tr><td>Rua do Ceebja</td><td>06:12</td></tr>
+        <tr><td>Av. das Flores</td><td>06:20</td></tr>
+        <tr><td>Praça Central</td><td>06:30</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/20.jpeg" alt="Linha 020 - Santa Clara IV">
+  </article>
+
+  <!-- Linha 021 -->
+  <article id="linha021" class="linhaOnibus" style="display:none">
+    <h2>Linha 021 - Santa Clara II</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Central</td><td>06:10</td></tr>
+        <tr><td>Rua Guarani</td><td>06:20</td></tr>
+        <tr><td>Rua Cristo Rei</td><td>06:30</td></tr>
+        <tr><td>Rua Redentor</td><td>06:40</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/21.jpeg" alt="Linha 021 - Santa Clara II">
+  </article>
+
+  <!-- Linha 022 -->
+  <article id="linha022" class="linhaOnibus" style="display:none">
+    <h2>Linha 022 - JD Concordia</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Central</td><td>06:00</td></tr>
+        <tr><td>Rua Borges Medeiros</td><td>06:10</td></tr>
+        <tr><td>Rua Julio Verne</td><td>06:15</td></tr>
+        <tr><td>Rua Henrique Bombadelli</td><td>06:25</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/22.jpeg" alt="Linha 022 - JD Concordia">
+  </article>
+
+  <!-- Linha 023 -->
+  <article id="linha023" class="linhaOnibus" style="display:none">
+    <h2>Linha 023 - Coopagro via Centro</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Central</td><td>06:15</td></tr>
+        <tr><td>Rua Guarani</td><td>06:20</td></tr>
+        <tr><td>Avenida Ministro Cirde Lima</td><td>06:26</td></tr>
+        <tr><td>Rua Rodrigues Alves</td><td>06:30</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/23.jpeg" alt="Linha 023 - Coopagro via Centro">
+  </article>
+
+  <!-- Linha 024 -->
+  <article id="linha024" class="linhaOnibus" style="display:none">
+  <h2>Linha 024 - São Francisco São João / Parizzotto</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:30</td></tr>
+      <tr><td>Rua Almirante Barroso</td><td>06:34</td></tr>
+      <tr><td>Avenida Senador Atílio Fontana</td><td>06:40</td></tr>
+      <tr><td>Avenida Carlos Sbaraini</td><td>06:50</td></tr>
+      <tr><td>Rua Amanda Schoenei</td><td>06:55</td></tr>
+      <tr><td>Rua Antonio Bressan</td><td>07:00</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/24.jpeg" alt="Linha 024 - São Francisco São João / Parizzotto">
+</article>
+
+  <!-- Linha 025 -->
+  <article id="linha025" class="linhaOnibus" style="display:none">
+    <h2>Linha 025 - São Francisco São João/Paulista</h2>
+    <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:35</td></tr>
+      <tr><td>Rua Almirante Barroso</td><td>06:36</td></tr>
+      <tr><td>Avenida Senador Atílio Fontana</td><td>06:49</td></tr>
+      <tr><td>Avenida Carlos Sbaraini</td><td>06:54</td></tr>
+      <tr><td>Rua Antonio Bressan</td><td>07:00</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/25.jpeg" alt="Linha 025 - São Francisco São João/Paulista">
+  </article>
+
+
+  <!-- Linha 024 -->
+<article id="linha024" class="linhaOnibus">
+  <h2>Linha 024 - São Francisco São João / Parizzotto</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:00</td></tr>
+      <tr><td>São João</td><td>06:10</td></tr>
+      <tr><td>Parizzotto</td><td>06:20</td></tr>
+      <tr><td>Terminal Central</td><td>06:30</td></tr>
+      <tr><td>São João</td><td>06:40</td></tr>
+      <tr><td>Parizzotto</td><td>06:50</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/024 - Sao Franscisco São JoaoParizzoto.jpg">
+</article>
+
+<!-- Linha 025 -->
+<article id="linha025" class="linhaOnibus">
+  <h2>Linha 025 - São Francisco São João / Paulista</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:05</td></tr>
+      <tr><td>São João</td><td>06:15</td></tr>
+      <tr><td>Paulista</td><td>06:25</td></tr>
+      <tr><td>Terminal Central</td><td>06:35</td></tr>
+      <tr><td>São João</td><td>06:45</td></tr>
+      <tr><td>Paulista</td><td>06:55</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/025 Sao Franscisco sao JoaoPaulista.jpg">
+</article>
+
+<!-- Linha 026 -->
+<article id="linha026" class="linhaOnibus">
+  <h2>Linha 026 - São Francisco Parizzotto / São João</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:10</td></tr>
+      <tr><td>Parizzotto</td><td>06:20</td></tr>
+      <tr><td>São João</td><td>06:30</td></tr>
+      <tr><td>Terminal Central</td><td>06:40</td></tr>
+      <tr><td>Parizzotto</td><td>06:50</td></tr>
+      <tr><td>São João</td><td>07:00</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/026 Sao Francisco ParizzotoSao joao.jpg">
+</article>
+
+<!-- Linha 027 -->
+<article id="linha027" class="linhaOnibus">
+  <h2>Linha 027 - São Francisco Parizzotto / Auto Panorama</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:15</td></tr>
+      <tr><td>Parizzotto</td><td>06:25</td></tr>
+      <tr><td>Auto Panorama</td><td>06:35</td></tr>
+      <tr><td>Terminal Central</td><td>06:45</td></tr>
+      <tr><td>Parizzotto</td><td>06:55</td></tr>
+      <tr><td>Auto Panorama</td><td>07:05</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/027.jpg">
+</article>
+
+<!-- Linha 028 -->
+<article id="linha028" class="linhaOnibus">
+  <h2>Linha 028 - São Francisco São João / São João</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:20</td></tr>
+      <tr><td>São João</td><td>06:30</td></tr>
+      <tr><td>São João</td><td>06:40</td></tr>
+      <tr><td>Terminal Central</td><td>06:50</td></tr>
+      <tr><td>São João</td><td>07:00</td></tr>
+      <tr><td>São João</td><td>07:10</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/028.jpg">
+</article>
+
+<!-- Linha 029 -->
+<article id="linha029" class="linhaOnibus">
+  <h2>Linha 029 - PUC</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:25</td></tr>
+      <tr><td>PUC</td><td>06:35</td></tr>
+      <tr><td>Terminal Central</td><td>06:45</td></tr>
+      <tr><td>PUC</td><td>06:55</td></tr>
+      <tr><td>Terminal Central</td><td>07:05</td></tr>
+      <tr><td>PUC</td><td>07:15</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/029.jpg">
+</article>
+
+<!-- Linha 030 -->
+<article id="linha030" class="linhaOnibus">
+  <h2>Linha 030 - Operária via Piratini / Belo Horizonte</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:30</td></tr>
+      <tr><td>Piratini</td><td>06:40</td></tr>
+      <tr><td>Belo Horizonte</td><td>06:50</td></tr>
+      <tr><td>Operária</td><td>07:00</td></tr>
+      <tr><td>Piratini</td><td>07:10</td></tr>
+      <tr><td>Terminal Central</td><td>07:20</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/030.jpg">
+</article>
+
+<!-- Linha 031 -->
+<article id="linha031" class="linhaOnibus">
+  <h2>Linha 031 - Operária via Parizzotto / Belo Horizonte</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:35</td></tr>
+      <tr><td>Parizzotto</td><td>06:45</td></tr>
+      <tr><td>Belo Horizonte</td><td>06:55</td></tr>
+      <tr><td>Operária</td><td>07:05</td></tr>
+      <tr><td>Parizzotto</td><td>07:15</td></tr>
+      <tr><td>Terminal Central</td><td>07:25</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/031.jpg">
+</article>
+
+<!-- Linha 032 -->
+<article id="linha032" class="linhaOnibus">
+  <h2>Linha 032 - Operária via Piratini</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:40</td></tr>
+      <tr><td>Piratini</td><td>06:50</td></tr>
+      <tr><td>Operária</td><td>07:00</td></tr>
+      <tr><td>Piratini</td><td>07:10</td></tr>
+      <tr><td>Terminal Central</td><td>07:20</td></tr>
+      <tr><td>Operária</td><td>07:30</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/032.jpg">
+</article>
+
+<!-- Linha 033 -->
+<article id="linha033" class="linhaOnibus">
+  <h2>Linha 033 - Operária via Parizzotto</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>06:45</td></tr>
+      <tr><td>Parizzotto</td><td>06:55</td></tr>
+      <tr><td>Operária</td><td>07:05</td></tr>
+      <tr><td>Parizzotto</td><td>07:15</td></tr>
+      <tr><td>Terminal Central</td><td>07:25</td></tr>
+      <tr><td>Operária</td><td>07:35</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/033.jpg">
+</article>
+
+  <!-- Linha 034 -->
+  <article id="linha034" class="linhaOnibus">
+    <h2>Linha 034 - Jd. Porto Alegre</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Porto Alegre</td><td>06:00</td></tr>
+        <tr><td>Av. Brasil</td><td>06:15</td></tr>
+        <tr><td>Rua das Laranjeiras</td><td>06:22</td></tr>
+        <tr><td>Praça do Comércio</td><td>06:28</td></tr>
+        <tr><td>Rua das Palmeiras</td><td>06:34</td></tr>
+        <tr><td>Praça Central</td><td>06:40</td></tr>
+        <tr><td>Av. São Carlos</td><td>06:46</td></tr>
+        <tr><td>Terminal Porto Alegre</td><td>07:00</td></tr>
+        <tr><td>Av. Brasil</td><td>07:15</td></tr>
+        <tr><td>Rua das Laranjeiras</td><td>07:22</td></tr>
+        <tr><td>Praça do Comércio</td><td>07:28</td></tr>
+        <tr><td>Rua das Palmeiras</td><td>07:34</td></tr>
+        <tr><td>Praça Central</td><td>07:40</td></tr>
+        <tr><td>Av. São Carlos</td><td>07:46</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/034.jpg">
+  </article>
+
+  <!-- Linha 035 -->
+  <article id="linha035" class="linhaOnibus" style="display:none">
+    <h2>Linha 035 - Vila Industrial</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Vila Industrial</td><td>07:00</td></tr>
+        <tr><td>Rua das Indústrias</td><td>07:15</td></tr>
+        <tr><td>Av. dos Metalúrgicos</td><td>07:22</td></tr>
+        <tr><td>Rua da Produção</td><td>07:28</td></tr>
+        <tr><td>Praça dos Trabalhadores</td><td>07:34</td></tr>
+        <tr><td>Av. do Trabalhador</td><td>07:40</td></tr>
+        <tr><td>Terminal Vila Industrial</td><td>08:00</td></tr>
+        <tr><td>Rua das Indústrias</td><td>08:15</td></tr>
+        <tr><td>Av. dos Metalúrgicos</td><td>08:22</td></tr>
+        <tr><td>Rua da Produção</td><td>08:28</td></tr>
+        <tr><td>Praça dos Trabalhadores</td><td>08:34</td></tr>
+        <tr><td>Av. do Trabalhador</td><td>08:40</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/035.jpg">
+  </article>
+
+  <!-- Linha 036 -->
+  <article id="linha036" class="linhaOnibus" style="display:none">
+    <h2>Linha 036 - Coopagro via Parigot</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Coopagro</td><td>06:30</td></tr>
+        <tr><td>Rua Parigot</td><td>06:45</td></tr>
+        <tr><td>Rua das Oliveiras</td><td>06:52</td></tr>
+        <tr><td>Av. das Américas</td><td>06:58</td></tr>
+        <tr><td>Praça Parigot</td><td>07:05</td></tr>
+        <tr><td>Av. Central</td><td>07:10</td></tr>
+        <tr><td>Terminal Coopagro</td><td>07:30</td></tr>
+        <tr><td>Rua Parigot</td><td>07:45</td></tr>
+        <tr><td>Rua das Oliveiras</td><td>07:52</td></tr>
+        <tr><td>Av. das Américas</td><td>07:58</td></tr>
+        <tr><td>Praça Parigot</td><td>08:05</td></tr>
+        <tr><td>Av. Central</td><td>08:10</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/036.jpg">
+  </article>
+
+  <!-- Linha 037 -->
+  <article id="linha037" class="linhaOnibus" style="display:none">
+    <h2>Linha 037 - Pioneira via São João</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Pioneira</td><td>06:10</td></tr>
+        <tr><td>Rua São João</td><td>06:25</td></tr>
+        <tr><td>Av. das Flores</td><td>06:33</td></tr>
+        <tr><td>Praça Central</td><td>06:40</td></tr>
+        <tr><td>Rua da Paz</td><td>06:45</td></tr>
+        <tr><td>Terminal Pioneira</td><td>07:10</td></tr>
+        <tr><td>Rua São João</td><td>07:25</td></tr>
+        <tr><td>Av. das Flores</td><td>07:33</td></tr>
+        <tr><td>Praça Central</td><td>07:40</td></tr>
+        <tr><td>Rua da Paz</td><td>07:45</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/037.jpg">
+  </article>
+
+  <!-- Linha 038 -->
+  <article id="linha038" class="linhaOnibus" style="display:none">
+    <h2>Linha 038 - Pioneira via Piratini</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Pioneira</td><td>06:05</td></tr>
+        <tr><td>Rua Piratini</td><td>06:20</td></tr>
+        <tr><td>Av. das Palmeiras</td><td>06:27</td></tr>
+        <tr><td>Praça das Acácias</td><td>06:33</td></tr>
+        <tr><td>Rua das Oliveiras</td><td>06:38</td></tr>
+        <tr><td>Terminal Pioneira</td><td>07:05</td></tr>
+        <tr><td>Rua Piratini</td><td>07:20</td></tr>
+        <tr><td>Av. das Palmeiras</td><td>07:27</td></tr>
+        <tr><td>Praça das Acácias</td><td>07:33</td></tr>
+        <tr><td>Rua das Oliveiras</td><td>07:38</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/038.jpg">
+  </article>
+
+  <!-- Linha 039 -->
+  <article id="linha039" class="linhaOnibus" style="display:none">
+    <h2>Linha 039 - Europa via Centro</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Europa</td><td>06:00</td></tr>
+        <tr><td>Rua Central</td><td>06:10</td></tr>
+        <tr><td>Praça da Bandeira</td><td>06:15</td></tr>
+        <tr><td>Av. das Nações</td><td>06:20</td></tr>
+        <tr><td>Terminal Europa</td><td>07:00</td></tr>
+        <tr><td>Rua Central</td><td>07:10</td></tr>
+        <tr><td>Praça da Bandeira</td><td>07:15</td></tr>
+        <tr><td>Av. das Nações</td><td>07:20</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/039.jpg">
+  </article>
+
+  <!-- Linha 040 -->
+  <article id="linha040" class="linhaOnibus" style="display:none">
+    <h2>Linha 040 - Panorama II</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Panorama II</td><td>06:05</td></tr>
+        <tr><td>Rua das Acácias</td><td>06:12</td></tr>
+        <tr><td>Av. das Flores</td><td>06:18</td></tr>
+        <tr><td>Praça Central</td><td>06:24</td></tr>
+        <tr><td>Terminal Panorama II</td><td>07:05</td></tr>
+        <tr><td>Rua das Acácias</td><td>07:12</td></tr>
+        <tr><td>Av. das Flores</td><td>07:18</td></tr>
+        <tr><td>Praça Central</td><td>07:24</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/040.jpg">
+  </article>
+
+  <!-- Linha 041 -->
+  <article id="linha041" class="linhaOnibus" style="display:none">
+    <h2>Linha 041 - Escola Agrícola via 1 de Maio</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Escola Agrícola</td><td>06:10</td></tr>
+        <tr><td>Rua 1 de Maio</td><td>06:20</td></tr>
+        <tr><td>Av. das Palmeiras</td><td>06:30</td></tr>
+        <tr><td>Praça Central</td><td>06:40</td></tr>
+        <tr><td>Terminal Escola Agrícola</td><td>07:10</td></tr>
+        <tr><td>Rua 1 de Maio</td><td>07:20</td></tr>
+        <tr><td>Av. das Palmeiras</td><td>07:30</td></tr>
+        <tr><td>Praça Central</td><td>07:40</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/041.jpg">
+  </article>
+
+  <!-- Linha 042 -->
+  <article id="linha042" class="linhaOnibus" style="display:none">
+    <h2>Linha 042 - Chocolates Roma</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Chocolates Roma</td><td>06:05</td></tr>
+        <tr><td>Rua do Cacau</td><td>06:15</td></tr>
+        <tr><td>Av. do Chocolate</td><td>06:22</td></tr>
+        <tr><td>Praça das Delícias</td><td>06:30</td></tr>
+        <tr><td>Terminal Chocolates Roma</td><td>07:05</td></tr>
+        <tr><td>Rua do Cacau</td><td>07:15</td></tr>
+        <tr><td>Av. do Chocolate</td><td>07:22</td></tr>
+        <tr><td>Praça das Delícias</td><td>07:30</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/042.jpg">
+  </article>
+
+  <!-- Linha 043 -->
+  <article id="linha043" class="linhaOnibus" style="display:none">
+    <h2>Linha 043 - Covatti/Ceebja</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Covatti</td><td>06:00</td></tr>
+        <tr><td>Rua do Ceebja</td><td>06:12</td></tr>
+        <tr><td>Av. das Flores</td><td>06:20</td></tr>
+        <tr><td>Praça Central</td><td>06:30</td></tr>
+        <tr><td>Terminal Covatti</td><td>07:00</td></tr>
+        <tr><td>Rua do Ceebja</td><td>07:12</td></tr>
+        <tr><td>Av. das Flores</td><td>07:20</td></tr>
+        <tr><td>Praça Central</td><td>07:30</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/043.jpg">
+  </article>
+
+  <!-- Linha 044 -->
+  <article id="linha044" class="linhaOnibus" style="display:none">
+    <h2>Linha 044 - Loteamento Lorenzetti</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Lorenzetti</td><td>06:10</td></tr>
+        <tr><td>Rua Lorenzetti</td><td>06:20</td></tr>
+        <tr><td>Av. do Loteamento</td><td>06:30</td></tr>
+        <tr><td>Praça Central</td><td>06:40</td></tr>
+        <tr><td>Terminal Lorenzetti</td><td>07:10</td></tr>
+        <tr><td>Rua Lorenzetti</td><td>07:20</td></tr>
+        <tr><td>Av. do Loteamento</td><td>07:30</td></tr>
+        <tr><td>Praça Central</td><td>07:40</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/044.jpg">
+  </article>
+
+  <!-- Linha 045 -->
+  <article id="linha045" class="linhaOnibus" style="display:none">
+    <h2>Linha 045 - Europa via Concórdia</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Europa</td><td>06:05</td></tr>
+        <tr><td>Rua Concórdia</td><td>06:15</td></tr>
+        <tr><td>Av. das Nações</td><td>06:25</td></tr>
+        <tr><td>Praça Central</td><td>06:35</td></tr>
+        <tr><td>Terminal Europa</td><td>07:05</td></tr>
+        <tr><td>Rua Concórdia</td><td>07:15</td></tr>
+        <tr><td>Av. das Nações</td><td>07:25</td></tr>
+        <tr><td>Praça Central</td><td>07:35</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/045.jpg">
+  </article>
+
+  <!-- Linha 046 -->
+  <article id="linha046" class="linhaOnibus" style="display:none">
+    <h2>Linha 046 - Aterro Sanitário</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Aterro Sanitário</td><td>06:00</td></tr>
+        <tr><td>Rua do Aterro</td><td>06:15</td></tr>
+        <tr><td>Av. da Limpeza</td><td>06:25</td></tr>
+        <tr><td>Praça do Meio Ambiente</td><td>06:35</td></tr>
+        <tr><td>Terminal Aterro Sanitário</td><td>07:00</td></tr>
+        <tr><td>Rua do Aterro</td><td>07:15</td></tr>
+        <tr><td>Av. da Limpeza</td><td>07:25</td></tr>
+        <tr><td>Praça do Meio Ambiente</td><td>07:35</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/046.jpg">
+  </article>
+
+  <!-- Linha 047 -->
+  <article id="linha047" class="linhaOnibus" style="display:none">
+    <h2>Linha 047 - Senai/Prati</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Senai</td><td>06:20</td></tr>
+        <tr><td>Rua do Prati</td><td>06:30</td></tr>
+        <tr><td>Av. dos Trabalhadores</td><td>06:40</td></tr>
+        <tr><td>Praça Central</td><td>06:50</td></tr>
+        <tr><td>Terminal Senai</td><td>07:20</td></tr>
+        <tr><td>Rua do Prati</td><td>07:30</td></tr>
+        <tr><td>Av. dos Trabalhadores</td><td>07:40</td></tr>
+        <tr><td>Praça Central</td><td>07:50</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/047.jpg">
+  </article>
+
+  <!-- Linha 048 -->
+  <article id="linha048" class="linhaOnibus" style="display:none">
+    <h2>Linha 048 - Intebairros Noturno</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Intebairros</td><td>18:00</td></tr>
+        <tr><td>Rua da Noite</td><td>18:15</td></tr>
+        <tr><td>Av. das Estrelas</td><td>18:25</td></tr>
+        <tr><td>Praça da Lua</td><td>18:35</td></tr>
+        <tr><td>Terminal Intebairros</td><td>19:00</td></tr>
+        <tr><td>Rua da Noite</td><td>19:15</td></tr>
+        <tr><td>Av. das Estrelas</td><td>19:25</td></tr>
+        <tr><td>Praça da Lua</td><td>19:35</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/048.jpg">
+  </article>
+
+  <!-- Linha 049 -->
+  <article id="linha049" class="linhaOnibus" style="display:none">
+    <h2>Linha 049 - Prati</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Prati</td><td>06:00</td></tr>
+        <tr><td>Rua Prati</td><td>06:10</td></tr>
+        <tr><td>Av. dos Comerciários</td><td>06:20</td></tr>
+        <tr><td>Praça do Comércio</td><td>06:30</td></tr>
+        <tr><td>Terminal Prati</td><td>07:00</td></tr>
+        <tr><td>Rua Prati</td><td>07:10</td></tr>
+        <tr><td>Av. dos Comerciários</td><td>07:20</td></tr>
+        <tr><td>Praça do Comércio</td><td>07:30</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/049.jpg">
+  </article>
+
+  <!-- Linha 050 -->
+  <article id="linha050" class="linhaOnibus" style="display:none">
+    <h2>Linha 050 - Santa Clara II via Cepbio</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Terminal Santa Clara II</td><td>06:10</td></tr>
+        <tr><td>Rua Cepbio</td><td>06:20</td></tr>
+        <tr><td>Av. das Flores</td><td>06:30</td></tr> 
+        <tr><td>Praça Central</td><td>06:40</td></tr>
+        <tr><td>Terminal Santa Clara II</td><td>07:10</td></tr>
+        <tr><td>Rua Cepbio</td><td>07:20</td></tr>
+        <tr><td>Av. das Flores</td><td>07:30</td></tr>
+        <tr><td>Praça Central</td><td>07:40</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/050.jpg">
+  </article>
+
+
+  <!-- PARTE DO ANDREI -->
+
+
+  <!-- Linha 077 -->
+<article id="linha077" class="linhaOnibus">
+  <h2>Linha 077 - Multinha BRF</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Avenida Senador Atílio Fontana 3460</td><td>02:15</td></tr>
+      <tr><td>Rua Piratini 1727</td><td>02:23</td></tr>
+      <tr><td>Rua Santos Dumont 1864</td><td>02:25</td></tr>
+      <tr><td>Av. Parigot de Souza 2883</td><td>02:32</td></tr>
+      <tr><td>Rua Laurindo Moterle 142</td><td>02:39</td></tr>
+      <tr><td>Rua João Oreste Ruaro 3277</td><td>02:47</td></tr>
+    </tbody>
+  </table>
+  <br>
+  <img src="Pasta sem título/Rota 77.jpeg" width="25%">
+</article>
+
+<!-- Linha 078 -->
+<article id="linha078" class="linhaOnibus">
+  <h2>Linha 078 - BRF INterbairros Pioneira / Empanados</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Rua do Pinhal 470</td><td>03:30</td></tr>
+      <tr><td>Rua Presidente Getúlio Vargas</td><td>03:30</td></tr>
+      <tr><td>Rua Boa Esperança 530</td><td>03:31</td></tr>
+      <tr><td>Rua dos Pinheiros 586</td><td>03:34</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/Rota 78.jpeg" width="25%">
+</article>
+
+<!-- Linha 079 -->
+<article id="linha079" class="linhaOnibus">
+  <h2>Linha 079 - BRF Interbairros SF via Panorama</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Avenida Carlos Sbaraini 1727</td><td>04:13</td></tr>
+      <tr><td>Rua Oswaldo Aranha</td><td>04:15</td></tr>
+      <tr><td>Avenida Senador Atílio Fontana 7370</td><td>04:19</td></tr>
+      <tr><td>Rua Willy Tesch 4022</td><td>04:20</td></tr>
+      <tr><td>Av. Carlos Sbaraini</td><td>04:26</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/Rota 79.jpeg" width="25%">
+</article>
+
+<!-- Linha 080 -->
+<article id="linha080" class="linhaOnibus">
+  <h2>Linha 080 - BRF INterbairros S.Francisco</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Avenida Senador Atílio Fontana</td><td>00:50</td></tr>
+      <tr><td>Rua hanni Clajus 1029</td><td>00:56</td></tr>
+      <tr><td>Rua Angelo Copetti</td><td>00:56</td></tr>
+      <tr><td>Rua Amélia Tomé 8359</td><td>00:59</td></tr>
+      <tr><td>Rua Ricardo oto Schmidt</td><td>01:03</td></tr>
+      <tr><td>Rua Aparecido Lopes Castilho</td><td>01:14</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/Rota 80.jpeg" width="25%">
+</article>
+
+<!-- Linha 081 -->
+<article id="linha081" class="linhaOnibus">
+  <h2>Linha 081 - Reforço Sta Clara IV</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Rua dos Pinheiros 1658</td><td>06:30</td></tr>
+      <tr><td>Rua Tómas de Aquino 1120</td><td>06:31</td></tr>
+      <tr><td>Rua Tomaz Gonzaga 1117</td><td>06:32</td></tr>
+      <tr><td>Rua Primeiro de Maio 1220</td><td>06:33</td></tr>
+      <tr><td>Rua Paulista 260</td><td>06:35</td></tr>
+      <tr><td>Rua Rui Barbosa 1186</td><td>06:39</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/Rota 81.jpeg" width="25%">
+</article>
+
+<!-- Linha 082 -->
+<article id="linha082" class="linhaOnibus">
+  <h2>Linha 082 - Dois Irmãos/Dez de Maio</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Terminal Central</td><td>12:00</td></tr>
+      <tr><td>Rua Almirante Barroso 2337</td><td>12:00</td></tr>
+      <tr><td>Rua Nossa Senhora do Rocio 1956</td><td></td></tr>
+      <tr><td>Rua Guarani 2176</td><td></td></tr>
+      <tr><td>Rua Primeiro de Março 167</td><td></td></tr>
+      <tr><td>Rua Sete de julho 207</td><td></td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/Rota 82.jpeg" width="25%">
+</article>
+
+<!-- Linha 083 -->
+<article id="linha083" class="linhaOnibus">
+  <h2>Linha 083 - Carlu via Coopagro/Prati</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Rodovia Doutor Ernesto Dall´ Óglio</td><td>17:20</td></tr>
+      <tr><td>Av. Ministro Cirne Lima</td><td></td></tr>
+      <tr><td>Rua Orestes Ruaro</td><td></td></tr>
+      <tr><td>Rua Ernesto Sperotto</td><td></td></tr>
+      <tr><td>Rua Carlos Barbosa</td><td></td></tr>
+      <tr><td>Rua Carlos Dall agnolo</td><td></td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/Rota 83.jpeg" width="25%">
+</article>
+
+<!-- Linha 084 -->
+<article id="linha084" class="linhaOnibus">
+  <h2>Linha 084 - Biopark INterbairros 2</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Avenida Max Planc</td><td>17:20</td></tr>
+      <tr><td>Pr-182 Jardim Porto Alegre</td><td></td></tr>
+      <tr><td>Rua General Canabro 2789</td><td></td></tr>
+      <tr><td>Rua Carlos Gomes 592</td><td></td></tr>
+      <tr><td>Avenida Maripá 2032</td><td></td></tr>
+      <tr><td>Rua Rui Barbosa 1186</td><td></td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/Rota 84.jpeg" width="25%">
+</article>
+
+<!-- Linha 085 -->
+<article id="linha085" class="linhaOnibus">
+  <h2>Linha 085 - Europa via Centro Reforço</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Rua General Canabarro 2789<td>06:38</td></tr>
+      <tr><td>Rua General Félix Da Cunha 1140</td><td>06:39</td></tr>
+      <tr><td>Rua Carlos Gomes 800</td><td>06:41</td></tr>
+      <tr><td>Avenida Maripá 2568</td><td>06:43</td></tr>
+      <tr><td>Rua Rui Barbosa 1186</td><td>06:51</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/Rota 85.jpeg" width="25%">
+</article>
+
+<!-- Linha 086 -->
+<article id="linha086" class="linhaOnibus">
+  <h2>Linha 086 - BRF Interbairros Industrial/Coopagro</h2>
+  <table>
+    <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+    <tbody>
+      <tr><td>Rua Palmital Vila Industrial</td><td>02:53</td></tr>
+      <tr><td>Rua São Judas Tadeu 311</td><td>02:54</td></tr>
+      <tr><td>Rua Treze De Abril 1943</td><td>02:54</td></tr>
+      <tr><td>Rua Carlos Barbosa 3109</td><td>03:00</td></tr>
+      <tr><td>Rua Piratini 2110</td><td>03:34</td></tr>
+      <tr><td>Avenida Senador Atílio Fontana</td><td>03:38</td></tr>
+    </tbody>
+  </table>
+  <img src="Pasta sem título/Rota 86.jpeg" width="25%">
+</article>
+
+  <!-- Linha 087 -->
+  <article id="linha087" class="linhaOnibus">
+    <h2>Linha 087 - BRF Interbairros Jd Mata/Europa</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Avenida Senador Atílio Fontana</td><td>03:21</td></tr>
+        <tr><td>Rua Dos Pioneiros</td><td>03:24</td></tr>
+        <tr><td>Rua Cambui 991</td><td>03:27</td></tr>
+        <tr><td>Rua Capitão Leônidas Marques 1278</td><td>03:28</td></tr>
+        <tr><td>Rua Nilo Cairo</td><td>03:29</td></tr>
+        <tr><td>Rua Domingos Miotto</td><td>03:32</td></tr>
+        <tr><td>Rua Dalmes Fernado Pastório</td><td>03:33</td></tr>
+        <tr><td>Rua Waldemar Turatti 60</td><td>03:38</td></tr>
+        <tr><td>Av. Maripá 2445</td><td>03:41</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 87.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 088 -->
+  <article id="linha88" class="linhaOnibus" style="display:none">
+    <h2>Linha 088 - Coopagro via Centro Reforço</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Rua Ernesto Sperotoo</td><td>05:50</td></tr>
+        <tr><td>Rua Albino Scariot 3216</td><td>05:52</td></tr>
+        <tr><td>Av. Roberto Fachini 430</td><td>05:52</td></tr>
+        <tr><td>Rua Maria José Nogueira</td><td>05:53</td></tr>
+        <tr><td>Rua Eugênio Gustavo Keller 1723</td><td>05:55</td></tr>
+        <tr><td>Rua Leonardo Francisco Nogueira 657</td><td>05:58</td></tr>
+        <tr><td>Rua Guarani 2173</td><td>06:08</td></tr>
+        <tr><td>Terminal de Toledo</td><td>06:12</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 88.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 089 -->
+  <article id="linha089" class="linhaOnibus" style="display:none">
+    <h2>Linha 089 - BRF Interbairros Europa</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Avenida Senador Atílio Fontana</td><td>01:25</td></tr>
+        <tr><td>Rua Egydio Geronymo Munaretto 3735</td><td>01:27</td></tr>
+        <tr><td>Rua Dalmes Fernando Pastório</td><td>01:33</td></tr>
+        <tr><td>Rua Capitão Leônidas Marques 151</td><td>01:42</td></tr>
+        <tr><td>Rua Arthur Mazzaferro 2366</td><td>01:49</td></tr>
+        <tr><td>Rua Cascavel 98</td><td>02:03</td></tr>
+        <tr><td>Av. José João Muraro 1077</td><td>02:10</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 89.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 091 -->
+  <article id="linha091" class="linhaOnibus" style="display:none">
+    <h2>Linha 091 - Prati Interbairros Pioneira/Europa</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Rua Egydio Geronymo</td><td>05:00</td></tr>
+        <tr><td>Rua Primeiro de Maio 2447</td><td>05:03</td></tr>
+        <tr><td>Rua Tomaz Gonzaga 1117</td><td>05:08</td></tr>
+        <tr><td>Rua Capitão Leônidas Marques 363</td><td>05:09</td></tr>
+        <tr><td>Av. Maripá 2032</td><td>05:11</td></tr>
+        <tr><td>Rua General Canabarro 2789</td><td>05:14</td></tr>
+        <tr><td>Rua Carlos Barbosa 1972</td><td>05:39</td></tr>
+        <tr><td>Rua Carlos Dall agnolo</td><td>05:48</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 91.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 092 -->
+  <article id="linha092" class="linhaOnibus" style="display:none">
+    <h2>Linha 092 - Prati Interbairros Pion/Europ/JP Alegre</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Avenida Senador Atílio Fontana</td><td>04:07</td></tr>
+        <tr><td>Rua Egydio Munaretto</td><td>04:09</td></tr>
+        <tr><td>Rua Primeiro de Maio 2446</td><td>04:12</td></tr>
+        <tr><td>Rua dos Pioneiros 418</td><td>04:16</td></tr>
+        <tr><td>Rua Boa Esperança 577</td><td>05:18</td></tr>
+        <tr><td>Rua do Pinhal 470</td><td>04:20</td></tr>
+        <tr><td>Av. Maripá 2771</td><td>04:22</td></tr>
+        <tr><td>Rua Carlos Barbosa 3210</td><td>05:08</td></tr>
+        
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 92.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 093 -->
+  <article id="linha093" class="linhaOnibus" style="display:none">
+    <h2>Linha 093 - BRF Interbairros Coopagro via São João</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Rua João Orestes Ruaro</td><td>03:23</td></tr>
+        <tr><td>Rua Oreste Fiorentin</td><td>03:23</td></tr>
+        <tr><td>Rua Ernesto Sperotto</td><td>03:25</td></tr>
+        <tr><td>Rua Albino Scariot 3216</td><td>03:27</td></tr>
+        <tr><td>Rua Eugênio Gustavo Keller</td><td>03:30</td></tr>
+        <tr><td>Av. Parigot de Souza 4498</td><td>03:36</td></tr>
+        <tr><td>Av.Senador Atílio Fontana 4611</td><td>03:50</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 93.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 094 -->
+  <article id="linha094" class="linhaOnibus" style="display:none">
+    <h2>Linha 094 - BRF Interbairros São Francisco</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Avenida Senador Atílio Fontana</td><td>03:45</td></tr>
+        <tr><td>Rua Egydio Geronymo Munaretto 4123</td><td>03:47</td></tr>
+        <tr><td>Rua Olegário Mariano 2489</td><td>03:48</td></tr>
+        <tr><td>Rua Mariana Zanetti</td><td>03:50</td></tr>
+        <tr><td>Av. Carlos Sbaraini 1068</td><td>03:51</td></tr>
+        <tr><td>Rua Amélia Tomé 8359</td><td>03:53</td></tr>
+        <tr><td>Rua Antônio Bressan 6374</td><td>04:00</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 94.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 095 -->
+  <article id="linha095" class="linhaOnibus" style="display:none">
+    <h2>Linha 095 - BRF Interbairros Pioneira/Europa Concord</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Avenida Senador Atílio Fontana</td><td>00:50</td></tr>
+        <tr><td>Rua Egydio Genonymo Munaretto 3735</td><td>00:52</td></tr>
+        <tr><td>Rua Primeiro de Maio 2447</td><td>00:55</td></tr>
+        <tr><td>Rua dos Pioneiros 1234</td><td>01:00</td></tr>
+        <tr><td>Rua Boa Esperança 577</td><td>01:03</td></tr>
+        <tr><td>Rua Minas Gerais 187</td><td>01:31</td></tr>
+        <tr><td>Av. José João Muraro 2220</td><td>01:39</td></tr>
+
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 95.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 096 -->
+  <article id="linha096" class="linhaOnibus" style="display:none">
+    <h2>Linha 096 - BRF Interbairros Europa/Santa Clara IV</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Avenida Senador Atílio Fontana</td><td>02:15</td></tr>
+        <tr><td>Rua Dos Pioneiros</td><td>02:18</td></tr>
+        <tr><td>Av. Maripá 2032</td><td>02:28</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 96.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 097 -->
+  <article id="linha097" class="linhaOnibus" style="display:none">
+    <h2>Linha 097 - BRF Interbairros Europa/Pioneira</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Rua General Félix Da Cunha</td><td>04:10</td></tr>
+        <tr><td>Rua Monteiro Lobato 881</td><td>04:12</td></tr>
+        <tr><td>Rua Waldemar Turatti 61</td><td>04:15</td></tr>
+        <tr><td>Rua Capitão Leônidas Marques 582</td><td>04:17</td></tr>
+        <tr><td>Av. Senador Atílio Fontana</td><td>04:35</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 97.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 098 -->
+  <article id="linha098" class="linhaOnibus" style="display:none">
+    <h2>Linha 098 - BRF Interbairros Europa/ST Clara IV</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Avenida Senador Atílio Fontana</td><td>03:10</td></tr>
+        <tr><td>Rua Pedro Álveres Cabral 526</td><td>03:10</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 98.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 099 -->
+  <article id="linha099" class="linhaOnibus" style="display:none">
+    <h2>Linha 099 - BRF Interbairros JD.MAta/Europa</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Avenida Senador Atílio Fontana</td><td>00:35</td></tr>
+        <tr><td>Rua Mario Fontana</td><td>00:38</td></tr>
+        <tr><td>Rua Primeiro de Maio</td><td>00:48</td></tr>
+        <tr><td>Rua dalmes Fernando Pastório</td><td>00:44</td></tr>
+        <tr><td>Rua Nilo Cairo 1109</td><td>00:47</td></tr>
+        <tr><td>Av. Maripá 2340</td><td>00:57</td></tr>
+        <tr><td>Rua Carlos Gomes 372</td><td>01:03</td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 99.jpeg" width="25%">
+  </article>
+
+  <!-- Linha 100 -->
+  <article id="linha100" class="linhaOnibus" style="display:none">
+    <h2>Linha 100 - BRF Interbairros Pioneira/Pinheirinho</h2>
+    <table>
+      <thead><tr><th>Ponto</th><th>Horário</th></tr></thead>
+      <tbody>
+        <tr><td>Avenida Senador Atílio Fontana</td><td>01:40</td></tr>
+        <tr><td>Av. Egydio Geronymo</td><td> </td></tr>
+        <tr><td>Rua Primeiro de Maio</td><td> </td></tr>
+        <tr><td>Rua Arlei Leonardi 901</td><td> </td></tr>
+        <tr><td>Rua Boa Esperança 530</td><td></td> </tr>
+        <tr><td>Rua Presidente Getúlio Vargas 241</td> <td></td></tr>
+      </tbody>
+    </table>
+    <img src="Pasta sem título/Rota 100.jpeg" width="25%">
+  </article>
+
+<script src="scripts.js"></script>
+</body>
+</html>
